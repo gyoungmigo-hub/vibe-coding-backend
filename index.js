@@ -6,7 +6,7 @@ require('./models/Todo');
 const todoRouter = require('./routers/todos');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.mongo_uri;
 
 app.use(cors());
